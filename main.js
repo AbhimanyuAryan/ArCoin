@@ -26,7 +26,7 @@ class Block{
 class Blockchain{
     constructor() {
         this.chain = [this.createGenesisBlock()];
-        this.difficulty = 2;
+        this.difficulty = 4;
     }
 
     createGenesisBlock() {
@@ -68,7 +68,7 @@ arcoin.addBlock(new Block(1, "10/07/2017", { amount: 4}));
 console.log('Mining block 2....');
 arcoin.addBlock(new Block(2, "12/07/2017", { amount: 10}));
 
-console.log('Is blockchain valid? ' + arcoin.isChainValid());
+//console.log('Is blockchain valid? ' + arcoin.isChainValid());
 
-console.log('Is blockchain valid? ' + arcoin.isChainValid());
+// console.log('Is blockchain valid? ' + arcoin.isChainValid());
 // console.log(JSON.stringify(arcoin, null, 4));
